@@ -2,8 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:puzzle_map/res/palette.dart';
-import 'package:puzzle_map/screens/multiplayer/account/account_screen.dart';
-import 'package:puzzle_map/screens/multiplayer/account/account_screen_large.dart';
+// import 'package:puzzle_map/screens/multiplayer/account/account_screen.dart';
+// import 'package:puzzle_map/screens/multiplayer/account/account_screen_large.dart';
 import 'package:puzzle_map/screens/puzzle/puzzle_starter_screen.dart';
 import 'package:puzzle_map/screens/solo/solo_screen.dart';
 import 'package:puzzle_map/utils/color_brightness.dart';
@@ -11,7 +11,7 @@ import 'package:url_strategy/url_strategy.dart';
 
 import 'firebase_options.dart';
 import 'screens/login_screen_name.dart';
-import 'screens/multiplayer/account/login/login_screen_large.dart';
+// import 'screens/multiplayer/account/login/login_screen_large.dart';
 
 void main() async {
   // To remove the hash in web

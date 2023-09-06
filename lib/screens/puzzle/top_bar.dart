@@ -121,50 +121,6 @@ class TopBar extends ConsumerWidget {
                 ),
               ),
             ),
-            SizedBox(width: tileGap),
-            TextButton(
-              style: _puzzleType == 'Multiplayer'
-                  ? ButtonStyle(
-                      foregroundColor: MaterialStateProperty.resolveWith<Color>(
-                        (Set<MaterialState> states) {
-                          return Palette.blue;
-                        },
-                      ),
-                    )
-                  : null,
-              onPressed: _puzzleType == 'Multiplayer'
-                  ? null
-                  : () {
-                      // ref.read(puzzleTypeNotifierProvider.notifier).dispose();
-
-                      ref
-                          .read(puzzleTypeNotifierProvider.notifier)
-                          .changeToMultiplayer();
-                      ref
-                          .read(emailAuthNotificationProvider.notifier)
-                          .checkForSignedUser();
-                    },
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Row(
-                  children: [
-                    Opacity(
-                      opacity: _puzzleType == 'Multiplayer' ? 1 : 0.5,
-                      child: const FaIcon(FontAwesomeIcons.gamepad),
-                    ),
-                    const SizedBox(width: 8),
-                    Text(
-                      'Multiplayer',
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.white.withOpacity(
-                            _puzzleType == 'Multiplayer' ? 1 : 0.5),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
           ],
         ),
       ),

@@ -47,7 +47,6 @@ class PuzzleScreenLarge extends ConsumerWidget {
           puzzleType: name,
           riveController: riveController,
         );
-      case PuzzleType.multiplayer:
       default:
         return SoloScreenLarge(
           solverClient: solverClient,
